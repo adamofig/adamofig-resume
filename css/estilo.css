@@ -8,17 +8,20 @@
   background: linear-gradient(to right, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36074d', endColorstr='#330919', GradientType=1 );
 }
-@font-face {
+/* Usar por si es necesario un cambio de letra
+ @font-face {
   font-family: kelly;
   src: url(../fonts/KellySlab-Regular.otf);
-}
+} */
+
 body{
-  font-family: kelly;
+  /* font-family: kelly; */
+  font-family: "gadugi","Helvetica Neue", Helvetica, Arial;
 }
+
 h6{
   font-size: 1.2em;
 }
-
 .margen-izq{
   margin-left: 30px;
 }
@@ -64,4 +67,9 @@ h6{
 }
 #nav div{
   padding-top: 5px;
+}
+
+.custom-container{
+  padding-right: 25px;
+  padding-left: 25px;
 }
