@@ -1,0 +1,67 @@
+.fondo{
+  background: rgba(54,7,77,1);
+  background: -moz-linear-gradient(left, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,7,77,1)), color-stop(31%, rgba(80,13,97,1)), color-stop(100%, rgba(51,9,25,1)));
+  background: -webkit-linear-gradient(left, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
+  background: -o-linear-gradient(left, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
+  background: -ms-linear-gradient(left, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
+  background: linear-gradient(to right, rgba(54,7,77,1) 0%, rgba(80,13,97,1) 31%, rgba(51,9,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36074d', endColorstr='#330919', GradientType=1 );
+}
+@font-face {
+  font-family: kelly;
+  src: url(../fonts/KellySlab-Regular.otf);
+}
+body{
+  font-family: kelly;
+}
+h6{
+  font-size: 1.2em;
+}
+
+.margen-izq{
+  margin-left: 30px;
+}
+.margen-izq-1{
+  margin-left: 10px;
+}
+.row{
+  margin:0;
+  padding: 0;
+}
+.container .row{
+ margin: 0;
+}
+.row .col{
+  padding: 0;
+}
+.gris1{
+  background-color:#404041;
+}
+.gris2{
+  background-color:#808284;
+}
+.gris3{
+  background-color:#939597;   
+}
+.vino1{
+  background-color:#5d0a0f;
+}
+.vino2{
+  background-color:#821A1A;
+}
+.alto1{
+  height: 100px;
+}
+.alto2{
+  height: 250px;
+}
+.altofoto{
+  height: 300px;
+}
+.alto-seccion{
+  height: 320px;
+}
+#nav div{
+  padding-top: 5px;
+}

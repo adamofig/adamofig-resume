@@ -1,0 +1,162 @@
+<div class="row">
+  <div class="col l12" style="background-color:#ffffff;">
+    <div class="animated fadeIn ">
+    <h5 class="center red-text text-darken-2">Portafolio</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col m7 l7">
+          <h5><b>Desarrollo web</b></h5>
+
+            <p><img style="margin-top: 10px;" class="interac-mx" width="18" class="responsive-img" src="img/svg/info.svg" alt="" />  <a href="http://interacmx.com">Interac México </a> </p>
+            <!-- <li><a href="http://mexicanadeseguridad.com/">Mexicana de Seguridad</a></li> -->
+            <p><img class="mi-curriculo" width="18"  src="img/svg/info.svg"/> Mi curriculo web  y otros curriculos desarrollados por mi 
+            <a href="http://aloisfigueroa.com/">Alois,</a>
+            <a href="http://ximena-crucess.xyz/">Ximena</a>
+            </p>
+            <br>
+
+
+          <h5><b>Taxi Seguro</b> </h5>
+            <p> <img class="taxi-seguro" width="18"  src="img/svg/info.svg"/> Desarrollo del modulo Táxi seguro Gobierno de la Ciudad de México </p>
+            <p><img class="dashboard-taxi" width="18"  src="img/svg/info.svg"/> Dashboard Taxi Seguro CDMX </p>
+            <br>
+
+          <h5><b>Proyecto Terminal UAM-A </b> </h5>
+          <p><img class="citas-academicas" width="18"  src="img/svg/info.svg"/> Aplicación móvil Citas Académicas  </p>
+          <br>
+          <h5><b>Aplicacion realidad aumentada</b></h5>
+          <p><img class="odontum" width="18"  src="img/svg/info.svg"/> Odomtum  </p>
+
+          <br>
+        </div>
+        <div class="col m5 l5 ">
+          <div id="info-proyectos">
+            <h6>Pasa el mause en <img style="padding-top: 3px;" class="interac-mx" width="22"  src="img/svg/info.svg" alt="" /> para ver información del proyecto.</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+//INTERAC
+$( ".interac-mx" ).hover(
+  function() {
+    var html=`
+    <h6>Interac México</h6>
+    <p>Interac México es una empresa dedicada al desarrollo de drones personalizados con impresión 3D</p>
+    <p>Participé en la formación de la empresa, encargandome las tecnologías web</p>
+    `;
+    $( "#info-proyectos" ).html(html);
+  },
+  function() { });
+//MI CURRICULO
+  $( ".mi-curriculo" ).hover(
+    function() {
+      var html=`
+      <h6>Mi curriculo web</h6>
+      <p>Éste currículo web  y los mostrados en los enlaces son una muestra de mis habilidades como desarrollador front-end.</p>
+      `;
+      $( "#info-proyectos" ).html(html);
+    },function(){} );
+
+//MODULO TAXI SEGURO
+$( ".taxi-seguro" ).hover(
+  function() {
+    var taxiSeguro=`
+    <h6>Taxi Seguro</h6>
+    <p>Taxi seguro es un módulo de la aplicación SMART CDMX el cual monitorea y  registra los viajes en taxi en la Ciudad de México </p>
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <img  class="responsive-img" src="img/portafolio/taxiseguro.jpg" alt="" />
+      </div>
+      <div class="col s12 m6 l6">
+        <img  class="responsive-img" src="img/portafolio/modulotaxi.jpg" alt="" />
+      </div>
+    </div>
+    <p> Este módulo de la  aplicación, se conecta con las APIs de la SEMOVI para obtener la información de todos los taxistas, se creó además una API para sustentar la aplicación  </p>
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <img  class="responsive-img" src="img/portafolio/cdmx.png" alt="" />
+      </div>
+      <div class="col s12 m6 l6">
+        <img  class="responsive-img" src="img/portafolio/cdmx2.png" alt="" />
+      </div>
+    </div>
+    <p>El usuario ingresa las placas del taxi y comienza un viaje, guardado las coordenadas de éste en todo momento,
+     el sistema le brinda la información del taxista así como comentarios de otros usuarios, le alerta también en caso de ser un taxi no registrado. </p>
+    <p> La aplicación fue desarrollada con Appcelerator, la API en php con ayuda del framework CodeIngiter y PostgrestSQL.
+    `;
+    $( "#info-proyectos" ).html(taxiSeguro);
+  },
+  function() { });
+
+//DASHBOAR TAXI
+$( ".dashboard-taxi" ).hover(
+  function() {
+    var html=`
+    <h6>Dashboard Taxi Seguro</h6>
+    <p>Aplicación web que visualiza todos los viajes en tiempo real registrados con la aplicación Smart CDMX </p>
+    <img  class="responsive-img" src="img/portafolio/dashboard1.jpg" alt="" />
+
+    <p>Genera reportes estadísticos y muestra información gráfica relevante para ayudar a la toma de decisiones.</p>
+    <img  class="responsive-img" src="img/portafolio/dashboard2.jpg" alt="" />
+    <p>Desarrollado con el framework CodeIgniter(php), Postgrest como base de datos, tecnologías web y librerias js como googlemaps y highcharts  
+
+    `;
+    $( "#info-proyectos" ).html(html);
+  },function(){} );
+
+//CITAS ACADÉMICAS UAM
+  $( ".citas-academicas" ).hover(
+    function() {
+      var html=`
+      <h6> App Citas Académicas </h6>
+      <p> Desarrollada como proyecto terminal para la Universidad Autónoma Metropolitana</p>
+       
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <img  class="responsive-img" src="img/portafolio/app1.png" alt="" />
+        </div>
+        <div class="col s12 m6 l6">
+          <img  class="responsive-img" src="img/portafolio/app2.png" alt="" />
+        </div>
+      </div>
+      <p> Ayuda a programar citas de asesorías académicas entre estudiantes y profesores </p>
+      <p> los datos son registrados a través de servicios web con un servidor apache tomcat </p>
+
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <img  class="responsive-img" src="img/portafolio/app3.png" alt="" />
+        </div>
+        <div class="col s12 m6 l6">
+          <img  class="responsive-img" src="img/portafolio/app4.png" alt="" />
+        </div>
+      </div>
+      <p> además existe una comunicación entre profesor y estudiante mediante notificaciones push, al realizar cualquier acción disponible como solicitar, aceptar o cancelar una cita  </p> 
+      <p> Desarrollada con Ionic 2, Java como lenguaje backend, utilizando hibernate y la librería Jersey generar servicios web,  MySql como base de datos.  </p>
+      `;
+      $( "#info-proyectos" ).html(html);
+    },function(){} );
+
+
+//realidad aumentada
+$( ".odontum" ).hover(
+  function() {
+    var html=`
+    <h6>Aplicación móvil de realidad virtual</h6>
+    <p>Diseñada para odontum, muestra un catálogo en 3D mediante realidad aumentada de los artículos que distribuye la empresa  </p>
+    <img  class="responsive-img" src="img/portafolio/ra.jpg" alt="" />
+    <p> Utiliza un folleto como estabilizador para mostrar la escena.(Actualmente disponible en AppStore y PlayStore)</p>
+    <img  class="responsive-img" src="img/portafolio/odontum.jpg" alt="" />
+    <p> Desarrollada con unity y vuforia </p>
+
+    
+
+    `;
+    $( "#info-proyectos" ).html(html);
+  },function(){} );
+</script>
