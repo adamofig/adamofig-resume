@@ -1,5 +1,5 @@
 // para saber que icono debe estar en movimiento
-
+$('.modal').modal();
 var seccionActual = $("#yo-img");
 
 function cambioDeSeccion(cambioSeccion) {

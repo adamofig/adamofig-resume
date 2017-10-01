@@ -73,3 +73,14 @@ h6{
   padding-right: 25px;
   padding-left: 25px;
 }
+.ref-modal{
+  color: #821A1A;
+}
+
+.separador{
+  margin-top: 10px;
+}
+.custom-hr{
+  width: 10%;
+  color: #5d0a0f;
+}
