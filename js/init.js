@@ -14,7 +14,6 @@ $.get("contenido/yo.html", function (data) {
   $("#contenido-principal").html(data);
 });
 
-
 $(".footer-icon").hover(
   function () {
     $(this).addClass("animated wobble");
