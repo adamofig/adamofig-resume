@@ -3,10 +3,10 @@
         <h5 class="red-text text-darken-4 center"><b>Experiencia y Portafolio</b></h5>
         <p>
             02/2017 - 11/2017 <br>
-            <i class="material-icons">adjust</i> <b>QueMesa</b><a href="#" id="QueMesa-overview" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a>
+            <b>QueMesa</b><a href="#" id="QueMesa-overview" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a>
             <br> Desarrollador
         </p>
-        <li>Desarrollo de aplicaciónes móviles para cliente y restaurantes, así como la comprobación de su correcto funcionamiento
+        <li>Desarrollo de aplicaciónes móviles, una para el usuario y otra para restaurantes, comprobación de su correcto funcionamiento
             en dispositivos Android e Ios. <a href="#" id="QueMesa-app" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a>
         </li>
         <li> Mapeo de la información proporcionada por el back-end.</li>
@@ -61,23 +61,34 @@
     </div>
 </div>
 
-<h6>QueMesa App</h6>
-<p>QueMesa es unas startup Méxicana la cual brinda un sistema de reservaciones de restaurantes en línea ofeciendo promociones
-    conectando asi clientes con Restaurantes</p>
-p
-
 <script>
-    function openModal(modalReferenceString, htmlDescription) {
+    function openModal(htmlDescription) {
         $("#content-modal").html(htmlDescription);
         $('#modal1').modal('open');
     }
 
     $("#QueMesa-overview").click(
         function () {
-            var queMesaAppDescription = `
+            var queMesaOverviewDescription = `
             QueMesa es una startup Mexicana la cual brinda un sistema de reservaciones de restaurantes en línea con promociones especiales, conectando así clientes con Restaurantes.
             `;
-            openModal("#QueMesa-overview", queMesaAppDescription);
+            openModal(queMesaOverviewDescription);
+        }
+    );
+
+    $("#QueMesa-app").click(
+        function () {
+            var queMesaAppDescription = `
+            Algunas de las funcionalidades más innovadoras de la aplicación son
+            <br/>Recibe notificaciones personalizadas, sugerencias de lugares para comer, recordatorios de reservación, comentarios del restaurante.
+            <br/>Con simplemente caminar cerca de un restaurante, la aplicación te notificará para invitarte a comer. 
+            <br/>Habilidad para crear una “solicitud grupal”: cuando el usuario tiene un evento puede notificar a todos los restaurantes de la zona registrados en QueMesa sobre éste evento, y ellos le ofrecerán promociones para atraer a nuevos clientes.
+            <br/>Sistema de filtros para encontrar las mejores promociones, las cuales son visualizadas en un mapa en tiempo real.
+            <br/><br/>
+            QueMesa Admin 
+            Esta aplicación es para facilitar la administración a los restaurantes, reciben notificaciones cuando hay una nueva reservación, cuando existe alguna solicitud grupal, califican al comensal, y pueden ver estadísticas de sus clientes en QueMesa.
+            `;
+            openModal(queMesaAppDescription);
         }
     );
 
