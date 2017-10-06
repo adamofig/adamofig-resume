@@ -1,15 +1,17 @@
 <div class="animated fadeIn">
     <div class="custom-container">
-        <h5 class="red-text text-darken-4 center">Experiencia y Portafolio</h5>
-
+        <h5 class="red-text text-darken-4 center"><b>Experiencia y Portafolio</b></h5>
         <p>
             02/2017 - 11/2017 <br>
-            <b>QueMesa</b> <br> Desarrollador 
+            <i class="material-icons">adjust</i> <b>QueMesa</b><a href="#" id="QueMesa-overview" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a>
+            <br> Desarrollador
         </p>
-        <li> Desarrollo de aplicación móvil así como la comprobación de su correcto funcionamiento en dispositivos Android e Ios. </li>
+        <li>Desarrollo de aplicaciónes móviles para cliente y restaurantes, así como la comprobación de su correcto funcionamiento
+            en dispositivos Android e Ios. <a href="#" id="QueMesa-app" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a>
+        </li>
         <li> Mapeo de la información proporcionada por el back-end.</li>
-        <li> Participación activa en todos los proyectos de QueMesa (Portal del usuario, plataforma Administrativa, Arquitectura Cloud
-            del sistema).</li>
+        <li> Participación activa en todos los proyectos de QueMesa (Portal del usuario, plataforma Administrativa, Arquitectura
+            Cloud del sistema).</li>
         <li> Colaboración remota y comunicación en inglés con equipo de desarrolladores (Australia y México).</li>
         <li> Implementación de mejoras y nuevas funcionalidades.</li>
         <li> Actualización de software a últimas versiones. </li>
@@ -18,7 +20,7 @@
             <b>Opalo VR</b> <br> Desarrollador
         </p>
         <li>Planeación y análisis de los servicios ofrecidos por Opalo VR en colaboración con CCO.</li>
-        <li>Selección de  tecnologías y planeamiento de la arquitectura del sistema.</li>
+        <li>Selección de tecnologías y planeamiento de la arquitectura del sistema.</li>
         <li>Desarrollo de la plataforma y la página web</li>
         <li>Comunicación constante y satisfactoria con la diseñadora.</li>
         <li>Desarrollo de aplicación móvil AR, y lograr una conexión efectiva y en tiempo real con la base de datos.</li>
@@ -29,14 +31,15 @@
             <br>Desarrollador (Servicio Social) <br>
             <li>Descripción y análisis de requerimientos de los ciudadanos para la aplicación SmartCDMX propuesta por CGMA.</li>
             <li>Colaboración constante con 3 desarrolladores mediante diferentes métodos para llegar al objetivo. </li>
-            <li>Desarrollo funcional del módulo Taxi seguro de la aplicación. <a href="#" id="taxi-seguro" class="ref-modal"> <i>Ver información</i></a></li>
+            <li>Desarrollo funcional del módulo Taxi seguro de la aplicación. <i class="material-icons">adjust</i><a href="#"
+                    id="taxi-seguro" class="ref-modal">Ver información</a></li>
             <li>Desarrollo funcional de un dashboard, el cual interpreta en tiempo real datos generados por la aplicación.
                 <a id="dashboard-taxi" href="#" class="ref-modal"> <i>Ver información</i></a> </li>
         </p>
 
         <br><br>
         <hr>
-        <h6 class="red-text text-darken-4 center">Otros proyectos</h6>
+        <h6 class="red-text text-darken-4 center"><b>Otros proyectos</b></h6>
 
         <p>
             06/2016 - 10/2016 <br>
@@ -44,22 +47,41 @@
             <br> Desarrollador
         </p>
 
-        <li> Trabajo en Equipo con Ingenieros electrónicos  y  mecánicos.  <a href="#" id="interac-mx" class="ref-modal"> <i>Ver información</i></a>            </li>
+        <li> Trabajo en Equipo con Ingenieros electrónicos y mecánicos. <a href="#" id="interac-mx" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a></li>
         <li> Proyectos diversos de desarrollo web. </li>
         <p>
             06/2016 - 10/2016 <br>
             <b>Proyecto terminal Uam Azcapotzalco </b>
         </p>
-        <li>Aplicación Móvil para agendar citas con profesores.<a href="#" id="citas-academicas" class="ref-modal"> <i>Ver información</i></a></li>
+        <li>Aplicación Móvil para agendar citas con profesores.<i class="material-icons">adjust</i><a href="#" id="citas-academicas"
+                class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
         <li> Investigación autodidacta de tecnologías de vanguardia. </li>
-
         <br>
 
     </div>
 </div>
 
+<h6>QueMesa App</h6>
+<p>QueMesa es unas startup Méxicana la cual brinda un sistema de reservaciones de restaurantes en línea ofeciendo promociones
+    conectando asi clientes con Restaurantes</p>
+p
 
 <script>
+    function openModal(modalReferenceString, htmlDescription) {
+        $("#content-modal").html(htmlDescription);
+        $('#modal1').modal('open');
+    }
+
+    $("#QueMesa-overview").click(
+        function () {
+            var queMesaAppDescription = `
+            QueMesa es una startup Mexicana la cual brinda un sistema de reservaciones de restaurantes en línea con promociones especiales, conectando así clientes con Restaurantes.
+            `;
+            openModal("#QueMesa-overview", queMesaAppDescription);
+        }
+    );
+
+
     $("#taxi-seguro").click(
         function () {
             var taxiSeguro = `
