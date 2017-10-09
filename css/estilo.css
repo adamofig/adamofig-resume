@@ -86,5 +86,13 @@ h6{
 }
 .material-icons{
   color: #5d0a0f;
-  font-size: 18px !important;
+  font-size: 12px !important;
+  margin-left: 10px;
+}
+.full-padding{
+  padding: 20px !important;
+}
+
+.img-border{
+  border: 3px #2C2C2C solid;
 }
