@@ -1,17 +1,17 @@
 <div class="animated fadeIn">
     <div class="custom-container">
-        <h5 class="red-text text-darken-4 center"><b>Experiencia y Portafolio</b></h5>
+        <h5 class="red-text text-darken-4 center">Experiencia y Portafolio</h5>
         <p>
             02/2017 - 11/2017 <br>
-            <b>QueMesa</b><a href="#" id="QueMesa-overview" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a>
+            <b>QueMesa</b><a href="#modal1" id="QueMesa-overview" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a>
             <br> Desarrollador
         </p>
         <li>Desarrollo de aplicaciónes móviles, una para el usuario y otra para restaurantes, comprobación de su correcto funcionamiento
-            en dispositivos Android e Ios. <a href="#" id="QueMesa-app" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a>
+            en dispositivos Android e Ios. <a href="#modal1" id="QueMesa-app" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a>
         </li>
         <li> Mapeo de la información proporcionada por el back-end.</li>
         <li> Participación activa en todos los proyectos de QueMesa (Portal del usuario, plataforma Administrativa, Arquitectura
-            Cloud del sistema). <a href="#" id="QueMesa-projects" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
+            Cloud del sistema). <a href="#modal1" id="QueMesa-projects" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
         <li> Colaboración remota y comunicación en inglés con equipo de desarrolladores (Australia y México).</li>
         <li> Implementación de mejoras y nuevas funcionalidades.</li>
         <li> Actualización de software a últimas versiones. </li>
@@ -31,10 +31,10 @@
             <br>Desarrollador (Servicio Social) <br>
             <li>Descripción y análisis de requerimientos de los ciudadanos para la aplicación SmartCDMX propuesta por CGMA.</li>
             <li>Colaboración constante con 3 desarrolladores mediante diferentes métodos para llegar al objetivo. </li>
-            <li>Desarrollo funcional del módulo Taxi seguro de la aplicación. <i class="material-icons">adjust</i><a href="#"
+            <li>Desarrollo funcional del módulo Taxi seguro de la aplicación. <i class="material-icons">adjust</i><a href="#modal1"
                     id="taxi-seguro" class="ref-modal">Ver información</a></li>
             <li>Desarrollo funcional de un dashboard, el cual interpreta en tiempo real datos generados por la aplicación.
-                <a id="dashboard-taxi" href="#" class="ref-modal"> <i>Ver información</i></a> </li>
+                <a id="dashboard-taxi" href="#modal1" class="ref-modal"> <i>Ver información</i></a> </li>
         </p>
 
         <br><br>
@@ -47,13 +47,13 @@
             <br> Desarrollador
         </p>
 
-        <li> Trabajo en Equipo con Ingenieros electrónicos y mecánicos. <a href="#" id="interac-mx" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a></li>
+        <li> Trabajo en Equipo con Ingenieros electrónicos y mecánicos. <a href="#modal1" id="interac-mx" class="ref-modal"><i class="material-icons">adjust</i> <i>Ver información</i></a></li>
         <li> Proyectos diversos de desarrollo web. </li>
         <p>
             06/2016 - 10/2016 <br>
             <b>Proyecto terminal Uam Azcapotzalco </b>
         </p>
-        <li>Aplicación Móvil para agendar citas con profesores.<i class="material-icons">adjust</i><a href="#" id="citas-academicas"
+        <li>Aplicación Móvil para agendar citas con profesores.<i class="material-icons">adjust</i><a href="#modal1" id="citas-academicas"
                 class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
         <li> Investigación autodidacta de tecnologías de vanguardia. </li>
         <br>
@@ -110,7 +110,7 @@
             Esta aplicación se desarrolló para facilitar la administración de usuarios a los restaurantes, puede recibir notificaciones cuando hay una nueva reservación o cuando existe alguna solicitud grupal, desde la app se puede calificar al comensal, y visualizar estadísticas de sus clientes en QueMesa.
             
             <br/><br/>
-            Tecnologías: Ionic, Cordova native pluggins, Breeze js, Google maps js, TypeScript,  HTML, CSS.
+            Tecnologías: Ionic, Cordova native pluggins, Breeze js, Google maps js, TypeScript,  HTML, SCSS.
             `;
             openModal(queMesaAppDescription);
         }
@@ -139,7 +139,7 @@
             </div>
             <p>Funcionalidades administrativas como: Agregar restaurantes, agregar mesas y promociones en diferentes días, cambiar el plan de negocios etc.</p>
             <br/>
-            Tecnologías: Angular, Breeze js, Lodash js, TypeScript, HTML, CSS.
+            Tecnologías: Angular, Breeze js, Lodash js, TypeScript, HTML, SCSS.
             `;
             openModal(queMesaOverviewDescription);
         }
@@ -169,7 +169,8 @@
     </div>
     <p>El usuario ingresa las placas del taxi y comienza un viaje, guardado las coordenadas de éste en todo momento,
      el sistema le brinda la información del taxista así como comentarios de otros usuarios, le alerta también en caso de ser un taxi no registrado. </p>
-    <p> La aplicación fue desarrollada con Appcelerator, la API en php con ayuda del framework CodeIngiter y PostgrestSQL.
+
+     Tecnologías: Frontend - Appcelerator, JavaScript -- Backend - CodeIgniter, PostgreSql.
     `;
 
             $("#content-modal").html(taxiSeguro);
