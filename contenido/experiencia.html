@@ -17,13 +17,16 @@
         <li> Actualización de software a últimas versiones. </li>
 
         <p>
-            <b>Opalo VR</b> <br> Desarrollador
+            <b>Opalo VR</b> <a href="#modal1" id="opalo-overview" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a>
+            <br/> Desarrollador
         </p>
         <li>Planeación y análisis de los servicios ofrecidos por Opalo VR en colaboración con CCO.</li>
         <li>Selección de tecnologías y planeamiento de la arquitectura del sistema.</li>
-        <li>Desarrollo de la plataforma y la página web</li>
+        <li>Desarrollo de la plataforma y la página web <a href="#modal1" id="opalo-platform" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
+
         <li>Comunicación constante y satisfactoria con la diseñadora.</li>
-        <li>Desarrollo de aplicación móvil AR, y lograr una conexión efectiva y en tiempo real con la base de datos.</li>
+        <li>Desarrollo de aplicación móvil AR, y lograr una conexión efectiva y en tiempo real con la base de datos. <a href="#modal1"
+                id="opalo-app" class="ref-modal"><i class="material-icons">adjust</i>Ver información</a></li>
         <li>Investigación constante de tecnologías adaptables al proyecto.</li>
 
         <p>
@@ -144,6 +147,64 @@
             openModal(queMesaOverviewDescription);
         }
     );
+
+    $("#opalo-overview").click(
+        function () {
+            var opaloOverviewDescription = `
+                   Opalo VR es un proyecto que ofrece experiencias interactivas virtuales por medio de un aplicación móvil y plataforma web.
+             `;
+            openModal(opaloOverviewDescription);
+        }
+    )
+
+    $("#opalo-platform").click(
+        function () {
+            var opaloOverviewDescription = `
+            <h6 class="center">Opalo platform</h6>
+             <p>Cuenta con funcionalidades administrativas para controlar la información visualizada en la aplicación, es posible agregar publicaciones, productos, y texturas.</p>
+            <div class="row">
+                <div class="col l12 m12 s12 full-padding">
+                    <img  class="responsive-img img-border" src="img/portafolio/opaloplatform1.png" alt="" />
+                </div>
+                <div class="col l12 m12 s12 full-padding">
+                    <img  class="responsive-img img-border" src="img/portafolio/opaloplatformobjetos.png" alt="" />
+                </div>
+            </div>
+            <br/>
+            Tecnologías: Angular, Firebase database, functions, storage, TypeScript, HTML, SCSS.
+             `;
+            openModal(opaloOverviewDescription);
+        }
+    )
+
+    $("#opalo-app").click(
+        function () {
+            var opaloOverviewDescription = `
+                       <h6>Opalo Reality App</h6>
+            <p>La aplicación contiene muestras tecnológicas de realidad aumentada, es posible visualizar objetos en tamaño real e interactuar con las manos por medio de un tablero.</p>
+            <div class="row">
+            <div class="col s12 m6 l6">
+                <img  class="responsive-img img-border" src="img/portafolio/opaloapp1.png" alt="" />
+            </div>
+            <div class="col s12 m6 l6">
+                <img  class="responsive-img img-border" src="img/portafolio/opaloapp3.png" alt="" />
+            </div>
+            </div>
+            <p>Toda la información expuesta al visualizar los modelos 3D puede ser modificada desde la plataforma, además personalizar el objeto 
+                subiendo  las imagenes a la plataforma las cuales son mostradas en la app para cambiar el aspecto del objeto, además todo esto es en tiempo real.</p>
+            <div class="row">
+            <div class="col s12 m6 l6">
+                <img  class="responsive-img img-border" src="img/portafolio/opaloapp2.png" alt="" />
+            </div>
+            <div class="col s12 m6 l6">
+                <img  class="responsive-img img-border" src="img/portafolio/opaloapp4.png" alt="" />
+            </div>
+            </div>
+            Tecnologías: Unity, Firebase SDK, Vuforia, C#.
+             `;
+            openModal(opaloOverviewDescription);
+        }
+    )
 
     $("#taxi-seguro").click(
         function () {
