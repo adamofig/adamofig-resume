@@ -105,6 +105,11 @@ h6{
   padding-right: 15px; 
   padding-left: 15px; 
 }
+
+.expand-img{
+  width: 100% !important;
+  padding: 10px;
+}
 /* @media only screen and (max-width: 992px){
   .modal {
     width: 80%;
