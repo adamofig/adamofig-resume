@@ -101,6 +101,10 @@ h6{
   max-height: 85% !important;
   /* height: 80% !important; */
 }
+.medium-container{
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
 /* @media only screen and (max-width: 992px){
   .modal {
     width: 80%;
