@@ -85,8 +85,8 @@ h6{
   color: #5d0a0f;
 }
 .material-icons{
-  color: #5d0a0f;
-  font-size: 12px !important;
+  color: #9d151e;
+  font-size: 14px !important;
   margin-left: 10px;
 }
 .full-padding{
@@ -109,6 +109,9 @@ h6{
 .expand-img{
   width: 100% !important;
   padding: 10px;
+}
+.store-img{
+  height: 40px;
 }
 /* @media only screen and (max-width: 992px){
   .modal {
