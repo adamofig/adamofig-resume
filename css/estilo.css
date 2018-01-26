@@ -74,7 +74,12 @@ h6{
   padding-left: 25px;
 }
 .ref-modal{
-  color: #821A1A;
+  color: #039be5;
+}
+
+.ref-modal i{
+  color: #039be5;
+  margin-right: 2px; 
 }
 
 .separador{
