@@ -30,9 +30,9 @@ $(".btn-nav").hover(
   }
 );
 
-$("#estudios").click(function () {
+$("#portafolio").click(function () {
   cambioDeSeccion($("#estudios-img"));
-  $.get("contenido/estudios.html", function (data) {
+  $.get("contenido/portafolio.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
@@ -72,9 +72,3 @@ $("#experiencia").click(function () {
   });
 });
 
-$("#portafolio").click(function () {
-  cambioDeSeccion($("#portafolio-img"));
-  $.get("contenido/portafolio.html", function (data) {
-    $("#contenido-principal").html(data);
-  });
-});
