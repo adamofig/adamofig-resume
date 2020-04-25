@@ -51,8 +51,8 @@
             </div>
             <b>Oct 2016 - Dic 2017</b>
             </a>- Desarrollador (Angular, Ionic, .Net, Azure)
-            <a href="#modal1" id="QueMesa-overview" class="ref-modal">
-                <i class="material-icons">adjust</i> Ver información</a>
+            <a id="QueMesa-overview" class="ref-modal pointer">
+                <i class="material-icons pointer">adjust</i> Ver información</a>
             <br>
             <i class="red-text text-darken-3">QueMesa es una startup de alto impacto, la cual tiene por objetivo
                 llenar
@@ -68,28 +68,28 @@
             </i>
         </p>
         <li>Encargado del desarrollo de la aplicación móvil QueMesa para el cliente.
-            <a href="#modal1" id="QueMesa-app" class="ref-modal">
-                <i class="material-icons">adjust</i>Ver información</a>
+            <a id="QueMesa-app" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>Ver información</a>
         </li>
         <li>Encargado del desarrollo de la aplicación móvil administrativa QueMesaAdmin para dueños de
             restaurantes.
-            <a href="#modal1" id="QueMesa-admin-app" class="ref-modal">
-                <i class="material-icons">adjust</i>Ver información</a>
+            <a id="QueMesa-admin-app" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>Ver información</a>
         </li>
 
         <li> Mapeo de la información proporcionada por el backend e integración con servicios en la nube (Azure
             cloud
             services).</li>
         <li> Actualizaciones a la base de datos y arquitectura de QueMesa (Backend).
-            <a href="#modal1" id="QueMesa-cloud" class="ref-modal">
+            <a id="QueMesa-cloud" class="ref-modal">
                 <i class="material-icons">adjust</i>Ver información</a>
         </li>
         <li>Encargado del tablero de información administrativo y participación activa en todos los proyectos de
             QueMesa
             (Portal
             del usuario, Plataforma Administrativa).
-            <a href="#modal1" id="QueMesa-projects" class="ref-modal">
-                <i class="material-icons">adjust</i>Ver información</a>
+            <a id="QueMesa-projects" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>Ver información</a>
         </li>
         <li>Aplicación de metodologías ágiles de desarrollo, colaboración remota y comunicación en inglés con
             equipo de
@@ -132,7 +132,7 @@
         <li>Planeación y análisis de los servicios ofrecidos por Opalo.</li>
         <li>Selección de tecnologías y planeamiento de la arquitectura del sistema.</li>
         <li>Desarrollo de la plataforma y la página web.
-            <a href="#modal1" id="opalo-platform" class="ref-modal">
+            <a id="opalo-platform" class="ref-modal">
                 <i class="material-icons">adjust</i>Ver información</a>
         </li>
 
@@ -140,8 +140,8 @@
         <li>Desarrollo de las aplicaciones de muestra de tecnologia AR y VR con las cuales se logró una conexión
             efectiva y en
             tiempo real con la base de datos.
-            <a href="#modal1" id="opalo-app" class="ref-modal">
-                <i class="material-icons">adjust</i>Ver información</a>
+            <a id="opalo-app" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>Ver información</a>
         </li>
         <li>Investigación constante de tecnologías adaptables al proyecto.</li>
 
@@ -174,8 +174,8 @@
                 viajes en
                 taxi en la Ciudad de México con el fin de brindar seguridad)
 
-                <a href="#modal1" id="taxi-seguro" class="ref-modal">
-                    <i class="material-icons">adjust</i>Ver información</a>
+                <a id="taxi-seguro" class="ref-modal">
+                    <i class="material-icons pointer">adjust</i>Ver información</a>
             </li>
             <li>Colaboración constante con 3 desarrolladores mediante diferentes métodos para llegar al
                 objetivo. </li>
@@ -186,7 +186,7 @@
 
             <li>Desarrollo funcional de un dashboard, el cual interpreta en tiempo real datos generados por la
                 aplicación.
-                <a id="dashboard-taxi" href="#modal1" class="ref-modal">
+                <a id="dashboard-taxi" class="ref-modal pointer">
                     <i>Ver información</i>
                 </a>
             </li>
@@ -212,8 +212,8 @@
                 nuevas tecnologías.</i>
         </p>
         <li>Colaboración en el proyecto Dron Personalizado.
-            <a href="#modal1" id="interac-mx" class="ref-modal">
-                <i class="material-icons">adjust</i>
+            <a id="interac-mx" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>
                 <i>Ver información</i>
             </a>
         </li>
@@ -228,8 +228,8 @@
             <b>Proyecto terminal Uam Azcapotzalco </b>
         </p>
         <li>Aplicación Móvil para agendar citas con profesores en la Universidad.
-            <a href="#modal1" id="citas-academicas" class="ref-modal">
-                <i class="material-icons">adjust</i>Ver información</a>
+            <a id="citas-academicas" class="ref-modal">
+                <i class="material-icons pointer">adjust</i>Ver información</a>
         </li>
         <li> Investigación autodidacta de tecnologías de vanguardia. </li>
         <br>
@@ -239,7 +239,7 @@
 <script>
     function openModal(htmlDescription) {
         $("#content-modal").html(htmlDescription);
-        $('#modal1').modal('open');
+        $('#globalModal').modal('open');
     }
 
     $("#QueMesa-overview").click(
@@ -453,7 +453,7 @@
     `;
 
             $("#content-modal").html(taxiSeguro);
-            $('#modal1').modal('open');
+            $('#globalModal').modal('open');
         });
 
     //DASHBOAR TAXI
@@ -478,7 +478,7 @@
 
     `;
             $("#content-modal").html(html);
-            $('#modal1').modal('open');
+            $('#globalModal').modal('open');
         });
 
     //CITAS ACADÉMICAS UAM
@@ -512,7 +512,7 @@
       <p>Tecnologías: Frontend - Ionic, HTML, CSS, -- Backend - Apache Tomcat, Hibernate, Jersey,  MySql, Java.</p>
       `;
             $("#content-modal").html(html);
-            $('#modal1').modal('open');
+            $('#globalModal').modal('open');
         });
 
     $("#interac-mx").click(
@@ -528,7 +528,7 @@
     <p>Participé en el proyecto "Desarrollo de drones personalizados con impresión 3D" el cual presentamos en el evento Campus Party 2016</p>
     `;
             $("#content-modal").html(html);
-            $('#modal1').modal('open');
+            $('#globalModal').modal('open');
         });
 
 </script>

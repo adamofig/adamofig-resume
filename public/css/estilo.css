@@ -123,3 +123,8 @@ h6{
     width: 80%;
   }
 } */
+
+.pointer {
+  cursor: pointer;
+  text-decoration: underline;
+}
