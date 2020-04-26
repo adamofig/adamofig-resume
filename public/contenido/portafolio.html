@@ -1,33 +1,67 @@
 <div class="row">
   <div class="col s12 m12 l12" style="background-color:#ffffff;">
     <div class="animated fadeIn" style="padding-left: 15px; padding-right: 15px;">
-      <h5 class="center red-text text-darken-2">Portafolio</h5>
+      <h5 class="center red-text text-darken-2">Portafol<span onclick="finishGranted()">io</span> </h5>
 
-      <div style="padding-left: 15px; padding-right: 15px;">
+      <h6><span class="red-text text-darken-3 "> Información de los proyectos de alto impacto de los cuales he estado a
+          cargo, se requiere un código para ver los detalles, envíame un correo para más información.
+        </span></h6>
+      <br>
+      <div id="grantedForm" style="padding-left: 15px; padding-right: 15px;">
         <div class="row">
           <div class="col s6">
             <input id="permission" type="password" placeholder="código de privilegios" onkeyup="grantAccess(event)">
           </div>
           <div class="col s6">
-            <a onclick="grantAccess()" class="waves-effect waves-light btn red darken-4"> Mostrar Documentos</a>
+            <a onclick="grantAccess()" class="waves-effect waves-light btn red darken-4 btn-small"> Mostrar
+              Documentos</a>
           </div>
         </div>
       </div>
+      <!-- Aqui Esta la lista de proyectos-->
 
-      <h5> <a onclick="openData('etlExpres')" class="pointer">ETL Exprés</a> </h5>
+      <div class="row">
+        <div class="col s4">
+          <img max-width="800px" class="materialboxed responsive-img full-padding" src="./img/portafolio/etl.png"
+            alt="">
 
-      <p>
-        Aplicación capaz de conectarse a cualquier base de datos y exportar los datos al datawerehousing.
-      </p>
+        </div>
+        <div class="col s8">
+          <h5> <a onclick="openData('etlExpres')" class="pointer">ETL Exprés</a> </h5>
 
-      <h5> <a onclick="openData('memoriaInstitucional')" class="pointer">Memoria Institucional</a> </h5>
+          <p>
+            Que pasa cuando se requiere tener la información en el datawerehousing, consultas autogestionadas, y los
+            sitemas
+            actuales
+            no pueden conectar mediante proxy, cloud sql, firebase y o spanner, además de el el usuario quien decide que
+            bae
+            exportar,
+            estos son los problemas que resuelve el ETL exprés
+          </p>
+        </div>
+      </div>
 
 
-      <p>Aplicación utilizada internamente para guardar archivos con unas reglas de negocio y accesos robustas</p>
+
+      <div class="row">
+        <div class="col s4">
+          <img max-width="800px" class="materialboxed responsive-img full-padding" src="./img/portafolio/memoria.png"
+            alt="">
+
+        </div>
+        <div class="col s8">
+          <h5> <a onclick="openData('memoriaInstitucional')" class="pointer">Memoria Institucional</a> </h5>
+          <p>Aplicación utilizada internamente para guardar archivos con unas reglas de negocio y accesos robustas</p>
+
+        </div>
+      </div>
+
+
+
 
       <h5> <a onclick="openData('machineLearning')" class="pointer">Machine Learning</a> </h5>
 
-      Primer proyecto estable para predecir el número de accidentes, en las ciudades.
+      Primer proyecto para la compañia que demuestra las ventajas y capacidades, para predecir el número de accidentes
 
       <h5> <a onclick="openData('unityAutos')" class="pointer">Unity 3D Autos</a> </h5>
 
@@ -43,11 +77,9 @@
 
   </div>
 </div>
-</div>
 
 
 <script>
-  let hasAccess = false;
 
   function openModal(htmlDescription) {
     $("#content-modal").html(htmlDescription);
@@ -56,6 +88,19 @@
 
 
   function openData(slideTitle) {
+
+    isGrantedAcessCV = sessionStorage.getItem("isGrantedAcessCV");
+    console.log("isGrantedAcessCV", isGrantedAcessCV)
+
+    if (isGrantedAcessCV == "true") {
+      console.log("Ya tengo acceso");
+    } else {
+
+      console.log("No tengo acceso al proyecto");
+      alert("Requiere un código para autorizar la información del proyecto");
+      return;
+    }
+
     let iframeSlide = null;
     if (slideTitle == "etlExpres") {
       iframeSlide = `<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTXwO1amP1wLTNSeiZuCw_5sDTc8UMMs1T80nooACMo-8fdJ7R6NnfwUO-3sAGgG0kpf_ssSjakTFUv/embed?start=false&loop=false&delayms=3000"
@@ -68,30 +113,60 @@
       iframeSlide = "Sin Presentación " + slideTitle;
 
     } else if (slideTitle == "machineLearning") {
-      iframeSlide = "Sin Presentación " + slideTitle;
-
+      iframeSlide = `<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSoS0OV76FtWb0vLh43sukVnWSbWQPeHSpFek1qm684rxg5O_YuQKTvFJLyHDX2uHbe9AuDaKnUHIN_/embed?start=false&loop=false&delayms=10000" 
+      frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>`;
     }
 
     openModal(iframeSlide)
   }
 
 
-
-  function openProject() {
-    alert("Necesitas un código para la función completa,  agrega un código");
-  }
+  // function openProject() {
+  //   alert("Necesitas un código para la función completa,  agrega un código");
+  // }
 
   function grantAccess(event) {
+    console.log("Validando accesos")
     if (!!event == false || event.keyCode == 13) {
       console.log("Buscando la contraseña");
       pass = document.getElementById("permission").value;
-      if (pass != "Hola1234") {
-        alert("Para desbloquear los privilegios por favor envíe un correo a jordan.figu@gmail.com, explicando el interés en mi perfil");
+
+      if (pass == "Hola1234") {
+        let grantedForm = document.getElementById("grantedForm");
+        grantedForm.style.display = "none";
+        alert("Se concede el acceso a las presentaciones de los proyectos");
+        sessionStorage.setItem('isGrantedAcessCV', true);
       } else {
-        alert("Ok funcionalidad desbloqueada");
-        hasAccess = true;
+        alert("Para desbloquear los privilegios por favor envíe un correo a jordan.figu@gmail.com, explicando el interés en mi perfil");
       }
     }
   }
+
+  function validateAccess() {
+
+    console.log(" validandoo accesoss")
+
+
+    isGrantedAcessCV = sessionStorage.getItem("isGrantedAcessCV");
+    console.log("isGrantedAcessCV", isGrantedAcessCV)
+    if (isGrantedAcessCV == "true") {
+      console.log("Se tienen los accesos ocultando formulario");
+
+      let grantedForm = document.getElementById("grantedForm");
+      grantedForm.style.display = "none";
+    }
+  }
+
+  function finishGranted() {
+    console.log("Quitando los permisos");
+    grantedForm.style.display = "block";
+
+    isGrantedAcessCV = sessionStorage.setItem("isGrantedAcessCV", false);
+  }
+
+  validateAccess();
+
+
+  $('.materialboxed').materialbox();
 
 </script>
