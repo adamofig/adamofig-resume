@@ -16,7 +16,7 @@ function cambioDeSeccion(cambioSeccion) {
 
 // para cargar la sección yo al iniciar 
 cambioDeSeccion(seccionActual);
-$.get("contenido/yo.html", function (data) {
+$.get("./yo.html", function (data) {
   $("#contenido-principal").html(data);
 });
 
@@ -38,42 +38,42 @@ $(".btn-nav").hover(
 
 $("#portafolio").click(function () {
   cambioDeSeccion($("#estudios-img"));
-  $.get("contenido/portafolio.html", function (data) {
+  $.get("./portafolio.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
 
 $("#yo").click(function () {
   cambioDeSeccion($("#yo-img"));
-  $.get("contenido/yo.html", function (data) {
+  $.get("./yo.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
 
 $("#ingeniero").click(function () {
   cambioDeSeccion($("#ingeniero-img"));
-  $.get("contenido/ingeniero.html", function (data) {
+  $.get("./ingeniero.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
 
 $("#desarrollador").click(function () {
   cambioDeSeccion($("#desarrollador-img"));
-  $.get("contenido/desarrollador.html", function (data) {
+  $.get("./desarrollador.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
 
 $("#competencias").click(function () {
   cambioDeSeccion($("#competencias-img"));
-  $.get("contenido/competencias.html", function (data) {
+  $.get("./competencias.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
 
 $("#experiencia").click(function () {
   cambioDeSeccion($("#experiencia-img"));
-  $.get("contenido/experiencia.html", function (data) {
+  $.get("./experiencia.html", function (data) {
     $("#contenido-principal").html(data);
   });
 });
