@@ -14,6 +14,19 @@ function cambioDeSeccion(cambioSeccion) {
   seccionActual.addClass("animated infinite jello");
 };
 
+function changeLang(lan){
+  // console.log("Mi Lenguaje es");
+  if (lan=='en'){
+    document.location.href = "../en/index.html";
+  } else {
+    document.location.href = "../es/index.html";
+  }
+}
+
+function donwloadPdf(){
+  alert("Función en desarrollo!");
+}
+
 // para cargar la sección yo al iniciar 
 cambioDeSeccion(seccionActual);
 $.get("./yo.html", function (data) {
