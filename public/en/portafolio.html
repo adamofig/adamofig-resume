@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col s12 m12 l12" style="background-color:#ffffff;">
     <div class="animated fadeIn" style="padding-left: 15px; padding-right: 15px;">
-      <h5 class="center red-text text-darken-2">Portafol<span onclick="finishGranted()">io</span> (currently working this section) </h5>
+      <h5 class="center red-text text-darken-2">Portafol<span onclick="finishGranted()">io</span> </h5>
 
       <h6><span class="red-text text-darken-3 "> Información de los proyectos de alto impacto de los cuales he estado a
           cargo, se requiere un código para ver los detalles, envíame un correo para más información.
@@ -13,8 +13,7 @@
             <input id="permission" type="password" placeholder="código de autorización" onkeyup="grantAccess(event)">
           </div>
           <div class="col s6">
-            <a onclick="grantAccess()" class="waves-effect waves-light btn red darken-4 btn-small"> Mostrar
-              Documentos</a>
+            <a onclick="grantAccess()" class="waves-effect waves-light btn red darken-4 btn-small"> Autorizar </a>
           </div>
         </div>
       </div>
@@ -41,6 +40,18 @@
       </div>
 
 
+      <div class="row">
+        <div class="col s4">
+          <img class="coverImg materialboxed responsive-img full-padding" src="../img/portafolio/gcptable.png" alt="">
+
+        </div>
+        <div class="col s8">
+          <h5> <a onclick="openData('etlExpres')" class="pointer">Arquitecturas GCP</a> </h5>
+          <p>
+            Propuestas para solucionar diferentes problemas.
+          </p>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col s4">
@@ -51,7 +62,6 @@
         <div class="col s8">
           <h5> <a onclick="openData('memoriaInstitucional')" class="pointer">Memoria Institucional</a> </h5>
           <p>Aplicación utilizada internamente para guardar archivos con  reglas de negocio y accesos bastante robustas</p>
-
         </div>
       </div>
 
