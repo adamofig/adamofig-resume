@@ -19,6 +19,19 @@
       </div>
       <!-- Aqui Esta la lista de proyectos-->
 
+      <div class="col s8">
+        <h5> <a onclick="openData('machineLearning')" class="pointer">Machine Learning</a> </h5>
+        <p>
+          Primer proyecto de la empresa en el se utilizarón técnicas de machine learning, predice el número
+          de siniestros que ocurrirán en cada estado de la ciudad, asi como la ubicación aproximada, pueden ser
+          clasificados por tipo de siniestro
+          como robo de auto, colisión y daños a cristales, se entrenó con los
+          datos históricos de la compañía, se crearón servicios web para consultar las predicciones y un proceso para
+          reentrenar los modelos semalmente,
+          además una aplicación para que el usuario puede visualzar gráficas y obtener el pronostico deseado.
+        </p>
+      </div>
+
       <div class="row">
         <div class="col s4">
           <img class="coverImg materialboxed responsive-img full-padding" src="../img/portafolio/etl.png" alt="">
@@ -29,9 +42,10 @@
 
           <p>
             La empresa tiene la necesidad de mantener sus datos en el datawarehousing empresarial (Bigquery),
-             con flujos automatizados y configurables donde las fuentes de datos puedan ser diversos motores como Mysql,
-              Spanner o Firebase, esta potente herramienta puede ser usada por medio de  servicios web para obtener los datos 
-              en tiempo real o con procesos en lotes que migran los datos cada  noche.
+            con flujos automatizados y configurables donde las fuentes de datos puedan ser diversos motores como Mysql,
+            Spanner o Firebase, esta potente herramienta puede ser usada por medio de servicios web para obtener los
+            datos
+            en tiempo real o con procesos en lotes que migran los datos cada noche.
           </p>
         </div>
       </div>
@@ -43,11 +57,11 @@
 
         </div>
         <div class="col s8">
-          <h5> <a onclick="openData('etlExpres')" class="pointer">Arquitecturas GCP</a> </h5>
+          <h5> <a onclick="openData('gcpArchitecting')" class="pointer">Arquitecturas GCP</a> </h5>
           <p>
-            Propuestas tecnológicas, y arquitecturas que implementé o colaboré en un equipo para realizarlas, 
-            desde aplicaciones montadas en google cloud 
-            hasta procesos de reentrenamiento continuo de machine learning. 
+            Propuestas tecnológicas, y arquitecturas que implementé o colaboré en un equipo para realizarlas,
+            desde aplicaciones montadas en google cloud
+            hasta procesos de reentrenamiento continuo de machine learning.
           </p>
         </div>
       </div>
@@ -61,8 +75,9 @@
         <div class="col s8">
           <h5> <a onclick="openData('memoriaInstitucional')" class="pointer">Memoria Institucional</a> </h5>
           <p>
-            Aplicación para guardar archivos, similar a google drive, pero diseñada especialmente para complir las necesidades 
-            y  reglas de negocio de la empresa, 
+            Aplicación para guardar archivos, similar a google drive, pero diseñada especialmente para complir las
+            necesidades
+            y reglas de negocio de la empresa,
             como accesos, indexación de archivos en la base de datos, agregación de metadata.
           </p>
         </div>
@@ -71,18 +86,11 @@
 
       <div class="row">
         <div class="col s4">
-          <img max-width="800px" class="materialboxed responsive-img full-padding" src="../img/portafolio/siniestros.png"
-            alt="">
+          <img max-width="800px" class="materialboxed responsive-img full-padding"
+            src="../img/portafolio/siniestros.png" alt="">
 
         </div>
-        <div class="col s8">
-          <h5> <a onclick="openData('machineLearning')" class="pointer">Machine Learning</a> </h5>
-          <p> Primer proyecto de la empresa en el que explotan técnicas de machine learning, predice el número 
-            de siniestros que ocurrirán en cada estado, clasificados por tipo, como robo de auto, colisión y daños 
-            a los cristales, se entrenó con los 
-            datos históricos de la compañía y como resultado sabe a qué hora y en qué día ocurrirán estos incidentes.
-          </p>
-        </div>
+
       </div>
 
 
@@ -93,10 +101,10 @@
         </div>
         <div class="col s8">
           <h5> <a onclick="openData('unityAutos')" class="pointer">Unity 3D Autos</a> </h5>
-          <p> 
-            Tablero en tiempo real y en 3D, que muestra los movimientos de los ajustadores de seguros, 
-            así como sus diferentes estados, se ven reflejados también los siniestros en tiempo real, 
-            cuenta con  predicciones de rutas y cálculos de tiempos de llegada.
+          <p>
+            Tablero en tiempo real y en 3D, que muestra los movimientos de los ajustadores de seguros,
+            así como sus diferentes estados, se ven reflejados también los siniestros en tiempo real,
+            cuenta con predicciones de rutas y cálculos de tiempos de llegada.
           </p>
         </div>
       </div>
@@ -109,7 +117,7 @@
         </div>
         <div class="col s8">
           <h5> <a onclick="openData('miselanea')" class="pointer">Miselanea</a> </h5>
-          <p> 
+          <p>
             * Tableros
             * Limpieza de datos
             * Creación de queries
@@ -164,6 +172,9 @@
     } else if (slideTitle == "machineLearning") {
       iframeSlide = `<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSoS0OV76FtWb0vLh43sukVnWSbWQPeHSpFek1qm684rxg5O_YuQKTvFJLyHDX2uHbe9AuDaKnUHIN_/embed?start=false&loop=false&delayms=10000" 
       frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>`;
+    } else if (slideTitle == "gcpArchitecting") {
+      iframeSlide = `<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFAD1RB9b1OcPsobZWiTRjcoFr7mUor74M5z-glTE_PVt3L5rux011MO2Bq0kt6xCdKB0-S8U9G5n-/embed?start=false&loop=false&delayms=5000" 
+      frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>`;
     }
 
     openModal(iframeSlide)
