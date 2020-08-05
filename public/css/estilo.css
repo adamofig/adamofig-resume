@@ -128,3 +128,28 @@ h6{
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+#btnLan {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+  top: 10px;
+  padding: 0px;
+}
+
+.selLan {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dropdownLang {
+  position: absolute;
+  right: 0px !important;
+  top: 40px !important;
+  left: 0px;
+  background-color: #c4c4c436;
+  /* right: 0px;
+  top: 10px; */
+}
