@@ -3,7 +3,8 @@
     <div class="animated fadeIn" style="padding-left: 15px; padding-right: 15px;">
       <h5 class="center red-text text-darken-2">Portfol<span onclick="finishGranted()">io</span> </h5>
 
-      <h6><span class="red-text text-darken-3">
+      <!-- TODO! Adamo cambiar esto a la cloud function para la segurida aprobechar para un vídeo. -->
+      <!-- <h6><span class="red-text text-darken-3">
           High impact projects where I was in charge, code is required for details due to sensitive information,
           request me via email
         </span></h6>
@@ -17,7 +18,7 @@
             <a onclick="grantAccess()" class="waves-effect waves-light btn red darken-4 btn-small"> Authorize </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Aqui Esta la lista de proyectos-->
 
       <div class="row">
@@ -138,7 +139,9 @@
 
   function openData(slideTitle) {
 
-    isGrantedAcessCV = sessionStorage.getItem("isGrantedAcessCV");
+    // isGrantedAcessCV = sessionStorage.getItem("isGrantedAcessCV");
+
+    isGrantedAcessCV = "true";
     console.log("isGrantedAcessCV", isGrantedAcessCV)
 
     if (isGrantedAcessCV == "true") {
