@@ -56,6 +56,9 @@ h6{
 .alto1{
   height: 100px;
 }
+.height-120{
+  min-height: 120px;
+}
 .alto2{
   height: 250px;
 }
@@ -161,4 +164,5 @@ h6{
 
 .project-detail{
   padding-left: 20px;
+  padding-top: 5px ;
 }
