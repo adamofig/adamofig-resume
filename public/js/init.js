@@ -20,9 +20,9 @@ $('.modal').modal();
 var seccionActual = $("#yo-img");
 
 function cambioDeSeccion(cambioSeccion) {
-  seccionActual.removeClass("animated infinite jello");
+  seccionActual.removeClass("selected-section");
   seccionActual = cambioSeccion;
-  seccionActual.addClass("animated infinite jello");
+  seccionActual.addClass("selected-section");
 };
 
 function changeLang(lan){
