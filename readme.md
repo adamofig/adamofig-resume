@@ -19,8 +19,6 @@ universal en el que siempre se carga el código
 
 Para probar los permisos del portafolio en la secciòn portafolio se usan las letra io para activar la función que elimina los permisos. 
 
-# El favicon fue generado con la siguiente herramienta
-https://favicon.io/favicon-generator/
 
 ## Pendientes 
 La seguridad es un tema importante, especialmente para mostrar los proyectos, no quiero meterme en problemas de informaciòn sensible 
@@ -29,3 +27,13 @@ Necesito un backend , cloud functions, el código de la presentación debe estar
 
 también una sección para administrar los códigos, basta con que tenga 5 dígitos y que tengan un duración de 2 semanas.
  
+
+
+# El favicon fue generado con la siguiente herramienta
+https://favicon.io/favicon-generator/
+
+La fuente es Megrim
+
+Fuente
+ https://fonts.google.com/specimen/Megrim?preview.text=Adamo%20Figueroa&preview.text_type=custom
+
